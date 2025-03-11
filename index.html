@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Jhonatan Omaña</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle" aria-label="Alternar modo oscuro/claro">
+        <svg class="sun-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <div class="hero">
+            <h1>¡Hola! Soy <span>Jhonatan Omaña</span></h1>
+            <p>Desarrollador Full Stack Junior | 25 años</p>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+            <img src="img/WhatsApp Image 2025-03-10 at 5.56.09 PM.jpeg" alt="Jhonatan Omaña" class="about-image">
+            <p>Soy un programador de 25 años con experiencia como desarrollador Full Stack Junior. Me especializo en crear soluciones web funcionales y atractivas utilizando tecnologías modernas , me gusta trabajar en equipo y cumplir todas las metas propuestas de manera efectiva y en el menor tiempo posible, pronto a terminar mis estudios , tengo conocimientos en diferentes tecnologias tales como html5 , css , javaScript ,mySql busco potenciar mis conocimientos y aplicarlos de manera efectiva.</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Mis Habilidades</h2>
+        <div class="album-horizontal">
+            <div class="album-items">
+                <div class="album-item">
+                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/html5.svg" alt="HTML5" title="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="album-item">
+                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/css3.svg" alt="CSS3" title="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="album-item">
+                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/python.svg" alt="Python" title="Python">
+                    <p>Python</p>
+                </div>
+                <div class="album-item">
+                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/mysql.svg" alt="MySQL" title="MySQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="album-item">
+                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/javascript_1.svg" alt="JavaScript" title="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-container">
+            <div class="proyecto">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div class="proyecto">
+                <h3>SpaceX</h3>
+                <div id="spacex-slideshow">
+                    <img src="img/nave.jpg" alt="SpaceX Falcon 9" class="slideshow-image">
+                    <img src="img/nave1.jpg" alt="SpaceX Starship" class="slideshow-image" style="display: none;">
+                    <img src="https://www.spacex.com/static/images/dragon/Dragon_1.jpg" alt="SpaceX Dragon" class="slideshow-image" style="display: none;">
+                </div>
+                <p> 
+                    <a href="https://github.com/JaimeBarreraS/PROYECTO-FILTRO_JS_BarreraJaime_GarciaJhonatan" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github.svg" alt="GitHub" class="inline-icon"> Ver en GitHub
+                    </a>
+                </p>
+            </div>
+            <div class="proyecto">
+                <h3></h3>
+                <p><a href="https://github.com/JaimeBarreraS/PROYECTO-FILTRO_JS_BarreraJaime_GarciaJhonatan" target="_blank">Ver en GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: <a href=>jhoed9952@gmail.com</a></p>
+        <p>
+            <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/linkedin.svg" alt="LinkedIn" class="social-icon">
+            LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-eduardo-oma%C3%B1a-garcia-0a351b303/" target="_blank">Jhonatan Omaña</a>
+        </p>
+        <p>
+            <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github.svg" alt="GitHub" class="social-icon">
+            GitHub: <a href="https://github.com/jhonatan-omana" target="_blank">jhonatan-omana</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Jhonatan Omaña. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
