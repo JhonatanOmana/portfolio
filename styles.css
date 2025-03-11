@@ -373,10 +373,10 @@ h2:hover::after {
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* .slideshow-image.active {
+.slideshow-image.active {
     opacity: 1;
     transform: translateX(0) scale(1);
-} */
+}
 
 .inline-icon {
     width: 2vw;
