@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Jhonatan Omaña</title>
+    <meta name="description" content="Portafolio de Jhonatan Omaña, desarrollador Full Stack Junior con experiencia en HTML, CSS, JavaScript, Python y MySQL.">
+    <meta name="keywords" content="desarrollador web, full stack, portafolio, Jhonatan Omaña">
+    <title>Jhonatan Omaña - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="theme-toggle" aria-label="Alternar modo oscuro/claro">
-        <svg class="sun-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <!-- Botón dia y noche -->
+    <button id="theme-toggle" aria-label="Cambiar tema">
+        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -20,17 +24,23 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
-        <svg class="moon-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
     </button>
 
     <nav>
+        <div class="nav-left">
+            <div class="logo">JO</div>
+            <img src="img/WhatsApp Image 2025-03-10 at 5.56.09 PM.jpeg" alt="Jhonatan Omaña" class="nav-photo">
+        </div>
+
         <div class="menu-toggle">
             <span></span>
             <span></span>
             <span></span>
         </div>
+
         <ul class="nav-menu">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -40,106 +50,141 @@
         </ul>
     </nav>
 
-    <section id="inicio">
+    <!-- Inicio -->
+    <section id="inicio" class="section-inicio">
+
         <div class="hero">
-            <h1>¡Hola! Soy <span>Jhonatan Omaña</span></h1>
-            <p>Desarrollador Full Stack Junior | 25 años</p>
+            <h1 class="hero-title"><span class="typewriter">Jhonatan Omaña</span></h1>
+            <p>desarrollador full stack Junior</p>
+            <div class="hero-buttons">
+                <a href="mailto:jhoed9952@gmail.com" class="btn">Contáctame</a>
+                <a href="#proyectos" class="btn-secondary">Ver mis proyectos</a>
+            </div>
+            <div class="hero-icon">🚀</div>
         </div>
+
     </section>
 
-    <section id="sobre-mi">
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="section-sobre-mi">
+
         <h2>Sobre Mí</h2>
-        <div class="about-content">
+        <div class="about-card">
             <img src="img/WhatsApp Image 2025-03-10 at 5.56.09 PM.jpeg" alt="Jhonatan Omaña" class="about-image">
-            <p>Soy un programador de 25 años con experiencia como desarrollador Full Stack Junior. Me especializo en crear soluciones web funcionales y atractivas utilizando tecnologías modernas , me gusta trabajar en equipo y cumplir todas las metas propuestas de manera efectiva y en el menor tiempo posible, pronto a terminar mis estudios , tengo conocimientos en diferentes tecnologias tales como html5 , css , javaScript ,mySql busco potenciar mis conocimientos y aplicarlos de manera efectiva.</p>
-        </div>
-    </section>
-
-    <section id="habilidades">
-        <h2>Mis Habilidades</h2>
-        <div class="album-horizontal">
-            <div class="album-items">
-                <div class="album-item">
-                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/html5.svg" alt="HTML5" title="HTML5">
-                    <p>HTML5</p>
-                </div>
-                <div class="album-item">
-                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/css3.svg" alt="CSS3" title="CSS3">
-                    <p>CSS3</p>
-                </div>
-                <div class="album-item">
-                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/python.svg" alt="Python" title="Python">
-                    <p>Python</p>
-                </div>
-                <div class="album-item">
-                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/mysql.svg" alt="MySQL" title="MySQL">
-                    <p>MySQL</p>
-                </div>
-                <div class="album-item">
-                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/javascript_1.svg" alt="JavaScript" title="JavaScript">
-                    <p>JavaScript</p>
-                </div>
+            <div class="about-text">
+                <p>Soy un desarrollador Full Stack Junior de 25 años con habilidades en HTML5, CSS3, JavaScript, Python y MySQL. Me especializo en crear aplicaciones web funcionales y responsive, trabajando en equipo para cumplir objetivos de manera eficiente. Estoy finalizando mis estudios y listo para aportar valor a proyectos reales.</p>
             </div>
         </div>
+
     </section>
 
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
-        <div class="proyectos-container">
-            <div class="proyecto">
-                <h3>Pokedex</h3>
-                <div id="spacex-slideshow">
-                    <img src="img/Thumbnail-pokedex.jpg" alt="SpaceX Falcon 9" class="slideshow-image">
-                    <img src="img/poke1.png" alt="SpaceX Falcon 9" class="slideshow-image">
-                    <img src="img/poke2.jpg" alt="SpaceX Falcon 9" class="slideshow-image">
-                    
-                </div>
-                <p>
-                    <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github.svg" alt="GitHub" class="inline-icon"> Ver en GitHub
-                </p>
-            </div>
-            <div class="proyecto">
-                <h3>SpaceX</h3>
-                <div id="spacex-slideshow">
-                    <img src="img/nave.jpg" alt="SpaceX Falcon 9" class="slideshow-image">
-                    <img src="img/nave1.jpg" alt="SpaceX Starship" class="slideshow-image" >
-                    <img src="img/nave2 (2).jpg" alt="SpaceX Dragon" class="slideshow-image" >
-                </div>
-                <p> 
-                    <a href="https://github.com/JaimeBarreraS/PROYECTO-FILTRO_JS_BarreraJaime_GarciaJhonatan" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github.svg" alt="GitHub" class="inline-icon"> Ver en GitHub
-                    </a>
-                </p>
-            </div>
-            <div class="proyecto">
-                <h3></h3>
+    <!-- Habilidades -->
+    <section id="habilidades" class="section-habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/html5.svg" alt="HTML5">
+                <p>HTML5</p>
                 
             </div>
-            
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/css3.svg" alt="CSS3">
+                <p>CSS3</p>
+                
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/javascript_1.svg" alt="JavaScript">
+                <p>JavaScript</p>
+                
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/python.svg" alt="Python">
+                <p>Python</p>
+                
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/mysql.svg" alt="MySQL">
+                <p>MySQL</p>
+                
+            </div>
         </div>
-             <P>
-                <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github.svg" alt="GitHub" class="inline-icon"> Ver en GitHub
-            </P>
     </section>
 
-    <section id="contacto">
+    <!--Proyectos -->
+    <section id="proyectos" class="section-proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos-container">
+            <div class="proyecto">
+                <h3>Pokédex</h3>
+                <div class="slideshow">
+                    <img src="img/ash-pokedes.jpg" alt="Pokédex" class="slideshow-image">
+                    <img src="img/poke1.png" alt="Pokédex interfaz" class="slideshow-image">
+                    <img src="img/poke2.jpg" alt="Pokédex funcionalidad" class="slideshow-image">
+                    <button class="prev">◄</button>
+                    <button class="next">►</button>
+                </div>
+                <p>Aplicación web interactiva que consume la API de Pokémon para mostrar datos en tiempo real. Implementada con HTML, CSS y JavaScript.</p>
+                <div class="project-buttons">
+                    <a href="https://github.com/jhonatan-omana/pokedex" target="_blank" class="btn-secondary">Ver en GitHub</a>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <h3>SpaceX </h3>
+                <div class="slideshow">
+                    <img src="img/nave.jpg" alt="SpaceX Falcon 9" class="slideshow-image">
+                    <img src="img/nave1.jpg" alt="SpaceX Starship" class="slideshow-image">
+                    <img src="img/nave2 (2).jpg" alt="SpaceX Dragon" class="slideshow-image">
+                    <button class="prev">◄</button>
+                    <button class="next">►</button>
+                </div>
+                <p>Herramienta web para explorar lanzamientos de SpaceX, con filtros dinámicos en JavaScript y una interfaz limpia construida con HTML y CSS.</p>
+                <div class="project-buttons">
+                    <a href="https://github.com/JaimeBarreraS/PROYECTO-FILTRO_JS_BarreraJaime_GarciaJhonatan" target="_blank" class="btn-secondary">Ver en GitHub</a>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <h3>Live user</h3>
+                <div class="slideshow">
+                    <img src="img/live user.png" alt="" class="slideshow-image">
+                    <img src="img/liveuser1.png" alt="" class="slideshow-image">
+                    <img src="img/liveuser2.webp" alt="" class="slideshow-image">
+                    <button class="prev">◄</button>
+                    <button class="next">►</button>
+                </div>
+                <p>Sistema de busqueda de personas mediante filtrado por nombre, proyecto que utiliza JavaScript para manejar usuarios en tiempo real.</p>
+                <div class="project-buttons">
+                    <a href="https://github.com/JhonatanOmana/Live_user-JavaScript" target="_blank" class="btn-secondary">Ver en GitHub</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto -->
+    <section id="contacto" class="section-contacto">
         <h2>Contacto</h2>
-             <img src="img/gmail.png" alt="LinkedIn" class="social-icon">
-        <p>
-            Email: <a href="jhoed9952@gmail.com" target="_blank">jhonatan-omana</a>></a>     
-        </p>
-        <p>
-            <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
-            LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-eduardo-oma%C3%B1a-garcia-0a351b303/" target="_blank">Jhonatan Omaña</a>
-        </p>
-        <p>
-            <img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github.svg" alt="GitHub" class="social-icon">
-            GitHub: <a href="https://github.com/jhonatan-omana" target="_blank">jhonatan-omana</a>
-        </p>
+        <div class="contact-info">
+            <a href="mailto:jhoed9952@gmail.com"><img src="img/gmail.png" alt="Email" class="social-icon"></a>
+            <a href="https://www.linkedin.com/in/jhonatan-eduardo-oma%C3%B1a-garcia-0a351b303/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+            <a href="https://github.com/jhonatan-omana" target="_blank"><img src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/github.svg" alt="GitHub" class="social-icon"></a>
+            <a href="cv/Jhonatan_Omana_CV.pdf" download class="btn-secondary">Descargar CV</a>
+        </div>
+        <form action="mailto:jhoed9952@gmail.com" method="get" target="_blank">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="body" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+            <a href="#inicio" class="back-to-top">↑</a>
+        </form>
     </section>
 
+    <!-- pie de la pegina -->
     <footer>
         <p>© 2025 Jhonatan Omaña. Todos los derechos reservados.</p>
+        
+        
     </footer>
 
     <script src="script.js"></script>

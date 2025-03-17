@@ -1,14 +1,41 @@
 
-const images = document.querySelectorAll('#spacex-slideshow .slideshow-image');
-let currentImage = 0;
+document.querySelectorAll('.proyecto').forEach(proyecto => {
+    const images = proyecto.querySelectorAll('.slideshow-image');
+    const prevBtn = proyecto.querySelector('.prev');
+    const nextBtn = proyecto.querySelector('.next');
+    let current = 0;
+    let interval;
 
-function showNextImage() {
-    images[currentImage].classList.remove('active');
-    currentImage = (currentImage + 1) % images.length;
-    images[currentImage].classList.add('active');
-}
-setInterval(showNextImage, 2000);
-images[0].classList.add('active');
+    function showImage(index) {
+        images.forEach(img => img.classList.remove('active'));
+        images[index].classList.add('active');
+    }
+
+    function nextImage() {
+        current = (current + 1) % images.length;
+        showImage(current);
+    }
+
+    function prevImage() {
+        current = (current - 1 + images.length) % images.length;
+        showImage(current);
+    }
+
+    images[0].classList.add('active');
+    interval = setInterval(nextImage, 3000);
+
+    nextBtn.addEventListener('click', () => {
+        clearInterval(interval);
+        nextImage();
+        interval = setInterval(nextImage, 3000);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        clearInterval(interval);
+        prevImage();
+        interval = setInterval(nextImage, 3000);
+    });
+});
 
 
 const toggleButton = document.getElementById('theme-toggle');
@@ -23,14 +50,7 @@ if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
 }
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('section').forEach((section, index) => {
-        section.style.animationDelay = `${index * 0.3}s`;
-    });
-});
-
-
+// Menú hamburguesa
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
